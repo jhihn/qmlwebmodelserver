@@ -1,0 +1,38 @@
+
+{
+	"id": "sample",
+	"class": "QSqlTableModel",
+	"database": {
+		"driver": "QSQLITE",
+		"name": "sample.sqlite3",
+		"username": "",
+		"password": "",
+		"connectoptions": "",
+		"hostname": ""
+	},
+	"columnInfo": [
+		{"name": "A", "type": "QString"},
+		{"name": "B", "type": "QString"},
+		{"name": "C", "type": "QString"}
+	],
+
+	"QSqlTableModel": {
+		"table": "test",
+		"filter": "",
+		"sort": {"column": 0, "order": 0 }
+	},
+
+	"QSqlQueryModel": {
+		"query": "SELECT a,b FROM test WHERE a >= :min and a <= :max"
+	},
+
+	"QListModel": {
+		"data" : ["X", "Y", "Z"]
+	},
+
+
+	"readable": true,
+	"writable": true
+}
+
+
